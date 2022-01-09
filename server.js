@@ -4,8 +4,8 @@ const bodyParser = require("body-parser");
 const validator = require("validator");
 
 const app = express();
-const port = 3000;
-//var port = process.env.PORT || 80
+// const port = 3000;
+var port = process.env.PORT || 3000
 
 //#region ##### CONFIG #####
 const config = {
