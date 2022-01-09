@@ -4,8 +4,8 @@ const bodyParser = require("body-parser");
 const validator = require("validator");
 
 const app = express();
-const port = 3000;
-var port = process.env.PORT || 3000
+// const port = 3000;
+// var port = process.env.PORT || 3000
 
 //#region ##### CONFIG #####
 const config = {
@@ -271,6 +271,6 @@ function register_insert(register_temp) {
 }
 //#endregion
 
-app.listen(port, function () {
+app.listen(process.env.PORT || 3000, function () {
     console.log("Servidor escutando a porta " + port);
 });
