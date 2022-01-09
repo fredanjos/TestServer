@@ -5,7 +5,7 @@ const validator = require("validator");
 
 const app = express();
 // const port = 3000;
-var port = process.env.PORT || 3000
+// var port = process.env.PORT || 3000
 
 //#region ##### CONFIG #####
 const config = {
@@ -13,7 +13,7 @@ const config = {
     user: "node_guaru",
     password: "fred2505",
     database: "node_guaru",
-    port: 3306,
+    port: process.env.PORT || 3306,
 };
 
 var connection = mysql.createConnection(config);
